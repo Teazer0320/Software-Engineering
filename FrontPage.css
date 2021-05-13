@@ -1,0 +1,107 @@
+/* 網頁的基礎背景設定*/
+*{
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+}
+body
+{   
+    background-color: #f3f3f3;    
+}
+
+/*上半部的部分*/
+.grayBlock{
+    background-color:#707070;
+    width: 100%;
+}
+.logo{
+    width: 70%;
+    padding-left: 0.5%;
+    padding-right: 50%;
+    padding-bottom: 0.5%;
+    padding-top:0.5%;
+    display: inline-block;
+    vertical-align:-webkit-baseline-middle;
+}
+.logoTEXT{
+    border: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 28px;
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+}
+
+/*中間的主要內容*/
+.centerRegion
+{
+    width: 87%;
+    /*height: 100px;*/
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* background-color: aqua; */
+}
+.news
+{
+    width: 62%;
+    height: 230px;
+    /* background-color: white; */
+    display:inline-block;
+    vertical-align: top;
+    border :0 px;
+    margin : 0 px;
+    font-size: large;
+    /* background-color: aquamarine; */
+}
+.grayLine
+{
+    height: 230px;
+    width: 0.8%;
+    background-color:#707070;
+    display:inline-block;
+    vertical-align: top;
+    border :0 px;
+    margin : 0 px;
+}
+.login
+{
+    width: 36%;
+    height: 230px;
+    /* background-color: black; */
+    display:inline-block;
+    vertical-align: top;
+    border :0 px;
+    margin : 0 px;
+    padding-left:3%;
+
+}
+
+/* 登入按鈕 以及 提醒文字 */
+.bottom
+{
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    /* background-color: #aaaaaa; */
+    width: 17%
+}
+.text
+{
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    /* background-color: #aaaaaa; */
+    width: 36%
+}
+
+.newsTable
+{
+    display: inline-block;
+    vertical-align: left;
+    width:100%;
+    height: auto;
+    overflow:hidden;
+    /* background-color: green; */
+    font-size: 14px;
+}
+
+
