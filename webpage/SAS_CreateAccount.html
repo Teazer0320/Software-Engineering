@@ -2,10 +2,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="../css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="../css/SAS.css" type="text/css" />
+        <link rel="stylesheet" href="../css/Form.css" type="text/css" />
         
         <meta charset  = "utf-8">
-        <title>SAS_Archive</title>
+        <title>SAS_CreateAccount</title>
     </head>
     <body style = margin:0px>
         <!-- 網頁上方的工具列或訊息 -->
@@ -20,8 +20,8 @@
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
             <div class = "grayBlock menu">
                 <ul>
-                    <li class = "grayLi"><a href="SAS_File.html">歸檔</a></li> 
-                    <li><a href="SAS_AccountManage.html">帳號</a></li>
+                    <li><a href="SAS_File.html">歸檔</a></li> 
+                    <li class = "grayLi"><a href="SAS_AccountManage.html">帳號</a></li>
                     <!-- <li><a href="#">場地列表</a></li> -->
                     <li><a href="SAS_AnnouncementManage.html">公告</a></li>
                 </ul>
@@ -33,17 +33,45 @@
 
         <!--中間區塊-->
         <div class = "centerRegion">
-        
-            <div class="text">
+            <div class = "text">
                 <p class = "title">
-                    <span>歸檔成功！</span>
+                    新增帳號
                 </p>
-            <div style="margin:1em">
-                <input type="button" value="確認" onclick="location.href='SAS_File.html'" style="cursor: pointer;">
-            </div>
-            
+                <!-- 申請單內容 -->
+
+                <div class = "content">
+                    <p> 帳號開頭：</p>
+                    <input type="text" style="width: 18em;" placeholder="如：A10755"/>
+                    <p> 帳號新增數量：</p>
+                    <input type="text" style="width: 18em;"/>
+                </div>
+                <div style="margin: 25px 150px; text-align: left;">
+                    <span> 身分別為：</span>
+                    &nbsp;&nbsp; <!--空格-->
+                    <input type="radio" id="r1" name="rr"/>
+                    <label for="r1">學生</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="r2" name="rr"/>
+                    <label for="r2">教職員</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="r2" name="rr"/>
+                    <label for="r3">校外人士</label>
+                </div>
+                <div class = "content">
+                    <p style = "font-size: 0.8em; width: auto;";>
+                        備註：<br>
+                        1.  新帳號的密碼預設與帳號相同。<br>
+                        2.  若欲更改帳號的詳細資訊，請至"帳號詳細資料頁面"進行修改。
+                    </p>
+                </div>
+                <!-- 確認鍵 -->
+                <div> 
+                    <a href = "SAS_AccountManage.html"  style = "margin:0em 1em;"><button type="button" style="cursor: pointer;">取消</button></a>
+                    <a href = "SAS_CreateAccountCheck.html" style = "margin:0em 1em;"><button type="button" style="cursor: pointer;">確認</button></a>
+                </div>
             </div>
         </div>
+                
 
         <!-- 網頁下方的工具列或訊息 -->
         <footer style = "margin: 0%;">

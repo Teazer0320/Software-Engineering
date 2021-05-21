@@ -2,10 +2,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="../css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="../css/SAS.css" type="text/css" />
+        <link rel="stylesheet" href="../css/Form.css" type="text/css" />
         
         <meta charset  = "utf-8">
-        <title>SAS_Archive</title>
+        <title>SAS_CreateAccountReply</title>
     </head>
     <body style = margin:0px>
         <!-- 網頁上方的工具列或訊息 -->
@@ -20,8 +20,8 @@
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
             <div class = "grayBlock menu">
                 <ul>
-                    <li class = "grayLi"><a href="SAS_File.html">歸檔</a></li> 
-                    <li><a href="SAS_AccountManage.html">帳號</a></li>
+                    <li><a href="SAS_File.html">歸檔</a></li> 
+                    <li class = "grayLi"><a href="SAS_AccountManage.html">帳號</a></li>
                     <!-- <li><a href="#">場地列表</a></li> -->
                     <li><a href="SAS_AnnouncementManage.html">公告</a></li>
                 </ul>
@@ -36,14 +36,18 @@
         
             <div class="text">
                 <p class = "title">
-                    <span>歸檔成功！</span>
+                    <span>帳號建立成功！</span>
                 </p>
             <div style="margin:1em">
-                <input type="button" value="確認" onclick="location.href='SAS_File.html'" style="cursor: pointer;">
+                <p>頁面將在五秒後跳轉...</p>
+                
+                <!-- <input type="button" value="確認" onclick="location.href='SAS_AccountManage.html'"style="margin: 0em 1em; cursor: pointer;"> -->
+                <meta http-equiv="refresh" content="4;url=SAS_AccountManage.html"> 
             </div>
             
             </div>
         </div>
+                
 
         <!-- 網頁下方的工具列或訊息 -->
         <footer style = "margin: 0%;">
