@@ -5,14 +5,18 @@
 }
 body
 {   
-    background-color: #f3f3f3;
-    font-family: Microsoft JhengHei; /*設定成微軟正黑體*/
+    background-color: #f3f3f3;   
+    font-family: Microsoft JhengHei; 
 }
 
 /*上半部的部分*/
 .grayBlock{
     background-color:#707070;
     width: 100%;
+}
+.grayLi{
+    background-color: #8E8B8B;
+
 }
 .logo{
     width: 70%;
@@ -32,7 +36,6 @@ body
     vertical-align: -webkit-baseline-middle;
     font-weight: bold; /*字體粗體*/
 }
-
 .menu{
     padding: 0 1em;
     display: flex;
@@ -41,7 +44,6 @@ body
     color: white;
     font-size: 1.1rem;
 }
-
 .menu ul{
     box-sizing: border-box;
 }
@@ -57,54 +59,65 @@ body
     /*cursor: pointer; /*a（連結）本身會自行設定*/
 }
 
-/*中間的主要內容*/
+
 .centerRegion
 {
     width: 100%;
 }
-
-.centerRegion > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* margin-bottom: -1px; */
-}
-
-.centerRegion > div .text{
-    width: 40%;
+.centerRegion .text{
     box-sizing: border-box;
     padding: 2em 3em;
     color: #707070;
+    text-align: center;
 }
-
-.text p{
-    margin-bottom: 1em;
+.text .reply{
+    font-size: 2em;
+    font-weight: bold; /*粗體*/
+    color: #D00000;
 }
-
 .text .title{
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: bold; /*粗體*/
+    color: black;
+}
+.centerRegion .text .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 220px;
+}
+/*中間的主要內容*/
+.formTextL
+{
+    width: 7em;
+    /* background-color:gray; */
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    text-align: left;
+}
+.formTextR
+{
+    width: 7em;
+    /* background-color:gray; */
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    text-align: left;
+    margin-left: 10px;
+}
+.formBlock
+{
+    width:200px;
+    /* background-color:YELLOW; */
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    margin-right: 20px;
+}
+.formBlock2
+{
+    width:565px;
+    /* background-color:YELLOW; */
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    margin-right: 20px;
 }
 
-.text .content{
-    line-height: 1.5em;
-    text-align: justify;
-}
-
-.text a{
-    display: block;
-    text-align: right;
-    text-decoration: underline;
-}
-
-.text a:hover{
-    color:black;
-}
-
-.centerRegion > div .image{
-    width: 60%;
-}
-
-.centerRegion > div .image img{
-    width: 100%;
-}
