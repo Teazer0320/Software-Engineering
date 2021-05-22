@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="../css/reset.css" type="text/css" />
         <link rel="stylesheet" href="../css/Account.css" type="text/css" />
         <meta charset  = "utf-8">
-        <title> RS_AccountApply</title>
+        <title> RS_AccountModify</title>
     </head>
     <body style = margin:0px>
         <!-- 網頁上方的工具列或訊息 -->
@@ -20,8 +20,21 @@
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
             <div class = "grayBlock menu">
                 <ul>
-                    <li class = "grayLi"><a href="Login.html">公告</a></li>
-                    <li><a href="RS_QueryPlaceIntro.html">介紹</a></li>
+                    <li><a href="RS_Form.html">租借場地</a></li>
+                    <li><a href="RS_Record.html">個人紀錄</a></li>
+                    <!-- <li><a href="#">訂單修改/刪除</a></li> -->
+                    <li><a href="RS_QueryPlace.html">場地使用狀況</a></li>
+                </ul>
+                <ul class = "dropDown">
+                    <li class = "grayLi"><a href="#">Hi,
+                            <span>使用者</span>
+                        </a>
+                        <ul>
+                            <li><a href="RS_AccountInfo.html">管理帳戶</a></li>
+                            <li><a href="Login.html">登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 </ul>
             </div>
         </header>
@@ -30,7 +43,7 @@
         <div class = "centerRegion">
             <div class = "text">
                 <p class = "title">
-                    帳號申請
+                    帳號資訊修改
                 </p>
                 <div class = "content">
                     <div class = "formTextR">
@@ -69,7 +82,7 @@
                         <p>再次確認密碼：</p>
                     </div>
                     <div class = "formBlock" >
-                        <input type = "text" name = "pswCheck" style="width: 200px" >
+                        <input type = "text" name = "pswCheck" style="width: 200px">
                     </div>
                 </div>
                 <div class = "content">
@@ -99,7 +112,8 @@
                     </div>
                 </div>
                 <div class = "bottom" style = "text-align: center;">
-                    <a href = "RS_AccountApplyCheck.html"><button type="button" style="cursor: pointer;">註冊</button></a>
+                    <a href = "RS_AccountInfo.html"><button type="button" style="cursor: pointer; margin-right: 2em;">取消修改</button></a>
+                    <a href = "RS_AccountModifyCheck.html"><button type="button" style="cursor: pointer; margin-left: 2em;">確認修改</button></a>
                 </div>
             </div>
         </div>

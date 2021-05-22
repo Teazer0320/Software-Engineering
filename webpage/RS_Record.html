@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="../css/RS_Record.css" type="text/css" />
         
         <meta charset  = "utf-8">
-        <title>Record</title>
+        <title>RS_Record</title>
     </head>
     <body style = margin:0px>
         <!-- 網頁上方的工具列或訊息 -->
@@ -15,23 +15,23 @@
 
             <div style = "padding-left: 3%;"display: inline-block>
                 <img src="../asset/logoword_.png" class = "logo">
-                <a href="Normalhome.html" class = "logoTEXT">烤肉露營區租借系統</a>
+                <a href="Login.html" class = "logoTEXT">烤肉露營區租借系統</a>
             </div>            
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
             <div class = "grayBlock menu">
                 <ul>
-                    <li><a href="Form.html">租借場地</a></li>
-                    <li class = "grayLi"><a href="#">個人紀錄</a></li>
+                    <li><a href="RS_Form.html">租借場地</a></li>
+                    <li class = "grayLi"><a href="RS_Record.html">個人紀錄</a></li>
                     <!-- <li><a href="#">訂單修改/刪除</a></li> -->
                     <li><a href="#">場地使用狀況</a></li>
                 </ul>
                 <ul class = "dropDown">
-                    <li><a href="#">Hi,
+                    <li><a>Hi,
                             <span>使用者</span>
                         </a>
                         <ul>
-                            <li><a href="#">管理帳戶</a></li>
-                            <li><a href="#">登出</a></li>
+                            <li><a href="RS_AccountInfo.html">管理帳戶</a></li>
+                            <li><a href="Login.html">登出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -85,62 +85,65 @@
                 <p class = "title">
                     歷史紀錄
                 </p>
-                
-            <!-- 列表內容 -->
-            <div class = "lsttitle" style = "margin-bottom: 1em; font-weight: bold;color: black;">
-                <div> 租借起始日</div>
-                <div> 申請人</div>
-                <div>填寫日期</div>
-                <div>訂單編號</div>
-                <div>申請爐數</div>
-                <div>申請營位數量</div>
-                <div>訂單狀態</div>
-                <div>租借費用</div>
-            </div>
-
-            <div class = "lst" style = "margin-bottom: 1em;color: #707070;">
-                <div> 2021/07/18</div>
-                <div> 高XX</div>
-                <div>2021/06/01</div>
-                <div>11111111</div>
-                <div>3</div>
-                <div>0</div>
-                <div>申請中</div>
-                <div>240</div>
-            </div>
-
-            <div class = "lst" style = "margin-bottom: 1em; color: #707070;">
-                <div> 2021/06/13</div>
-                <div> 高XX</div>
-                <div>2021/05/20</div>
-                <div>11111111</div>
-                <div>4</div>
-                <div>0</div>
-                <div>已繳費</div>
-                <div>320</div>
-            </div>
-
-            <div class = "lst" style = "margin-bottom: 1em; color: #707070;">
-                <div> 2021/01/03</div>
-                <div> 高XX</div>
-                <div>2000/12/11</div>
-                <div>11111111</div>
-                <div>1</div>
-                <div>1</div>
-                <div>活動完成</div>
-                <div>280</div>
-            </div>
-
-            <div class = "lst" style = "margin-bottom: 1em; color: #707070;">
-                <div> 2020/07/22</div>
-                <div> 高XX</div>
-                <div>2020/07/01</div>
-                <div>11111111</div>
-                <div>5</div>
-                <div>0</div>
-                <div>活動完成</div>
-                <div>400</div>
-            </div>
+                <!-- 列表內容 -->
+                <div class = "lsttitle" style = "margin-bottom: 1em; font-weight: bold;color: black;">
+                    <div> 租借起始日</div>
+                    <div> 申請人</div>
+                    <div>填寫日期</div>
+                    <div>訂單編號</div>
+                    <div>申請爐數</div>
+                    <div>申請營位數量</div>
+                    <div>訂單狀態</div>
+                    <div>租借費用</div>
+                </div>
+                <a href="RS_RecordInfo.html"> 
+                    <div class = "lst" style = "margin-bottom: 1em;color: #707070;">
+                        <div> 2021/07/18</div>
+                        <div> 高XX</div>
+                        <div>2021/06/01</div>
+                        <div>11111111</div>
+                        <div>3</div>
+                        <div>0</div>
+                        <div>申請中</div>
+                        <div>240</div>
+                    </div>
+                </a>
+                <a href="RS_RecordInfo.html"> 
+                    <div class = "lst" style = "margin-bottom: 1em; color: #707070;">
+                        <div> 2021/06/13</div>
+                        <div> 高XX</div>
+                        <div>2021/05/20</div>
+                        <div>11111111</div>
+                        <div>4</div>
+                        <div>0</div>
+                        <div>已繳費</div>
+                        <div>320</div>
+                    </div>
+                </a>
+                <a href="RS_RecordInfo.html"> 
+                    <div class = "lst" style = "margin-bottom: 1em; color: #707070;">
+                        <div> 2021/01/03</div>
+                        <div> 高XX</div>
+                        <div>2000/12/11</div>
+                        <div>11111111</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>活動完成</div>
+                        <div>280</div>
+                    </div>
+                </a>
+                <a href="RS_RecordInfo.html"> 
+                    <div class = "lst" style = "margin-bottom: 1em; color: #707070;">
+                        <div> 2020/07/22</div>
+                        <div> 高XX</div>
+                        <div>2020/07/01</div>
+                        <div>11111111</div>
+                        <div>5</div>
+                        <div>0</div>
+                        <div>活動完成</div>
+                        <div>400</div>
+                    </div>
+                </a>
             </div>
         </div>
 

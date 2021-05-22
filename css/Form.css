@@ -59,12 +59,32 @@ body
     text-decoration: underline;
     /*cursor: pointer; /*a（連結）本身會自行設定*/
 }
+/* 管理帳戶/登出的選單部分 */
+.dropDown ul {
+    display: none;
+}
+.dropDown li:hover > ul {
+    display: block;
+    margin: 1em 0 0 -0.75em;
+    padding: 0 1em;
+    position: absolute;
+    right: 0;
+    background: #8E8B8B;
+    box-sizing: border-box;
+} 
+.dropDown li:hover > ul li {
+    display: block;
+} 
 
 /*中間的主要內容*/
 .centerRegion{
     width: 100%;
 }
-
+.centerRegion .text .notice{
+    text-align: left;
+    margin: 25px 150px 40px 150px;
+    line-height: 1.5em;
+}
 .centerRegion .text{
     box-sizing: border-box;
     padding: 2em 3em;
@@ -80,7 +100,7 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 150px;
+    margin: 25px 50px;
 }
 .centerRegion .text .content > p, .centerRegion .text .content > div {
     width: 8em;
@@ -91,7 +111,7 @@ body
     justify-content: space-between;
     align-items: center;
 }
-.centerRegion .text .content .chooseflex{
+.centerRegion .text .content .chooseflex, .centerRegion .text .content .stateflex{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +123,7 @@ body
     height: 100px;
     
 }
-img{
+.checkbox img{
     width: 100%;
     cursor: pointer;
 }
@@ -122,7 +142,7 @@ input[type="checkbox"] + label {
   
 input[type="checkbox"] + label::after {
     content: '';
-    background-image: url("asset/checked3.png");
+    background-image: url("../asset/checked3.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 40px;
@@ -140,12 +160,17 @@ input[type="checkbox"] + label::after {
 input[type="checkbox"]:checked + label::after {
     opacity: 1;
 }
-.checkbox .index{
+
+.content .stateflex img{
+    height: 85px;
+    width: 100px;
+}
+.checkbox .index, .content .stateflex .index{
     font-size: 0.8em;
     color: #707070;
     text-align: left;
 }
-.centerRegion .text .checkbox .price{
+.centerRegion .text .checkbox .price, .content .stateflex .price{
     font-size: 0.8em;
     color: #707070;
     text-align: center !important;
