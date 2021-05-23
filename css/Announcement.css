@@ -92,6 +92,20 @@ body
     justify-content: space-between;
     margin: 2em 5em 1em 5em;
 }
+.lst
+{   
+    
+    display:flex;
+    justify-content: space-between;
+    margin: 1em 1em 1em 0em;
+}
+.lst div
+{
+    text-align:left;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
 .lst:hover{
     color: #FCDC92 !important;
     text-decoration: underline;

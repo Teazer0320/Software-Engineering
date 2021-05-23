@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/css/Announcement.css" type="text/css" />
         
         <meta charset  = "utf-8">
-        <title>SAS_AnnounceInfo</title>
+        <title>SAS_CreateAnnouncementCheck</title>
     </head>
     <body style = margin:0px>
         <!-- 網頁上方的工具列或訊息 -->
@@ -41,37 +41,20 @@
 
         <!--中間區塊-->
         <div class = "centerRegion">
-            <div class = "text">
-                <div style="border: 2px #707070 solid;margin: auto; padding-top: 20px; width:40em" >
-                    <p class = "title">
-                        公告
-                    </p>
-                    <!-- 申請單內容 -->
-                    
-                    <div class = "content">
-                        <p> 標題：</p>
-                        <input type="text" style="width: 40em;"/>
-                    </div>
-                    <div class = "content">
-                        <p> 發布者：</p>
-                        <input type="text" style="width: 15em;" readonly="readonly" value = "系統管理員"/>
-                        <p style="margin-left: 1em;"> 發布時間：</p>
-                        <input type="text" style="width: 15em;"/>
-                    </div>
-                    
-                    <div class = "content">
-                        <p> 內文：</p>
-                        <!-- <input type="text" style="width: 40em;"/> -->
-
-                        <textarea name="Content" readonly="readonly" style="width:40em;height:20em;">公告內容的啦</textarea>
-                    </div>
-                </div>   
-                <!-- 確認鍵 -->
-                <div>
-                    <a href = "SAS_AnnouncementManage.html"><button type="button" style="cursor: pointer; margin-top: 2em;">確認</button></a>
-                </div>
+        
+            <div class="text">
+                <p class = "reply" style="padding: 2em 0;">
+                    <span>是否發布公告？</span>
+                </p>
+            <div>
+                <input type="button" value="取消" onclick="location.href='SAS_AccountManage.html'"style="margin: 0em 2em;cursor: pointer;">
+                <input type="button" value="確認發布" onclick="location.href='SAS_CreateAnnouncementReply.html'"style="margin: 0em 2em; cursor: pointer;">
+            </div>
             </div>
         </div>
+
+        
+                
 
         <!-- 網頁下方的工具列或訊息 -->
         <footer style = "margin: 0%;">
