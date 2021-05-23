@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="../css/SAS.css" type="text/css" />
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="/css/SAS.css" type="text/css" />
         
         <meta charset  = "utf-8">
-        <title>SAS_Archive</title>
+        <title>SAS_AccountDeleteCheck</title>
     </head>
     <body style = margin:0px>
         <!-- 網頁上方的工具列或訊息 -->
@@ -14,20 +14,27 @@
             <div  class = "grayBlock" style= "padding:1.2%"></div>
 
             <div style = "padding-left: 3%;"display: inline-block>
-                <img src="../asset/logoword_.png" class = "logo">
+                <img src="/asset/logoword_.png" class = "logo">
                 <a href="#" class = "logoTEXT">烤肉露營區租借系統</a>
             </div>            
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
             <div class = "grayBlock menu">
                 <ul>
-                    <li class = "grayLi"><a href="SAS_File.html">歸檔</a></li> 
-                    <li><a href="SAS_AccountManage.html">帳號</a></li>
+                    <li><a href="SAS_File.html">歸檔</a></li>
+                    <li class = "grayLi"><a href="SAS_AccountManage.html">帳號</a></li> 
                     <!-- <li><a href="#">場地列表</a></li> -->
                     <li><a href="SAS_AnnouncementManage.html">公告</a></li>
                 </ul>
-                <a href="#">Hi,
-                    <span>系統管理員</span>
-                </a>
+                <ul class = "dropDown">
+                    <li class><a href="#">Hi,
+                            <span>系統管理員</span>
+                        </a>
+                        <ul>
+                            <li><a href="#">管理帳戶</a></li>
+                            <li><a href="Login.html">登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </header>
 
@@ -35,13 +42,13 @@
         <div class = "centerRegion">
         
             <div class="text">
-                <p class = "title">
-                    <span>歸檔成功！</span>
+                <p class = "reply" style="padding: 2em 0;">
+                    <span>是否刪除已選取帳號資料？</span>
                 </p>
-            <div style="margin:1em">
-                <input type="button" value="確認" onclick="location.href='SAS_File.html'" style="cursor: pointer;">
+            <div>
+                <input type="button" value="取消" onclick="location.href='SAS_AccountManage.html'" style="cursor: pointer; margin:0em 2em" >
+                <input type="button" value="確認" onclick="location.href='SAS_AccountDeleteReply.html'"style="cursor: pointer; margin:0em 2em">
             </div>
-            
             </div>
         </div>
 

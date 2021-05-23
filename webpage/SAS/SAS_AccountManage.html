@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="../css/SAS.css" type="text/css" />
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="/css/SAS.css" type="text/css" />
         
         <meta charset  = "utf-8">
         <title>SAS_AccountManage</title>
@@ -14,7 +14,7 @@
             <div  class = "grayBlock" style= "padding:1.2%"></div>
 
             <div style = "padding-left: 3%;"display: inline-block>
-                <img src="../asset/logoword_.png" class = "logo">
+                <img src="/asset/logoword_.png" class = "logo">
                 <a href="#" class = "logoTEXT">烤肉露營區租借系統</a>
             </div>            
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
@@ -25,9 +25,16 @@
                     <!-- <li><a href="#">場地列表</a></li> -->
                     <li><a href="SAS_AnnouncementManage.html">公告</a></li>
                 </ul>
-                <a href="#">Hi,
-                    <span>系統管理員</span>
-                </a>
+                <ul class = "dropDown">
+                    <li class><a href="#">Hi,
+                            <span>系統管理員</span>
+                        </a>
+                        <ul>
+                            <li><a href="#">管理帳戶</a></li>
+                            <li><a href="Login.html">登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </header>
 

@@ -112,6 +112,20 @@ body
 -webkit-filter: grayscale(1);
 }
 
+.centerRegion .text{
+    box-sizing: border-box;
+    padding: 2em 3em;
+    color: #707070;
+    text-align: center;
+}
+.text .reply{
+    font-size: 2em;
+    font-weight: bold; /*粗體*/
+    color: #D00000;
+}
+
+
+
 .centerRegion .text .content > p, .centerRegion .text .content > div {
     width: 8em;
     text-align: left;
@@ -153,4 +167,20 @@ body
 .right{
     text-align: right;
     margin-right: 30%;
+}
+/* 管理帳戶/登出的選單部分 */
+.dropDown ul {
+    display: none;
+}
+.dropDown li:hover > ul {
+    display: block;
+    margin: 1em 0 0 -0.75em;
+    padding: 0 1em;
+    position: absolute;
+    right: 0;
+    background: #8E8B8B;
+    box-sizing: border-box;
+} 
+.dropDown li:hover > ul li {
+    display: block;
 }
