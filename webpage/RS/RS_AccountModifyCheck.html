@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="../css/Account.css" type="text/css" />
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="/css/Account.css" type="text/css" />
         <meta charset  = "utf-8">
-        <title> RS_FormCancelCheck</title>
+        <title> RS_AccountModifyCheck</title>
     </head>
     <body style = margin:0px>
         <!-- 網頁上方的工具列或訊息 -->
@@ -14,23 +14,24 @@
             <!-- <table align = "center" width = "95%" cellpadding = "5"> -->
 
             <span style = "padding-left: 3%;"display: inline-block>
-                <img src="../asset/logoword_.png" class = "logo">
-                <a href="Login.html" class = "logoTEXT">烤肉露營區租借系統</a>
+                <img src="/asset/logoword_.png" class = "logo">
+                <a href="/webpage/Login.html" class = "logoTEXT">烤肉露營區租借系統</a>
             </span>            
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
             <div class = "grayBlock menu">
                 <ul>
                     <li><a href="RS_Form.html">租借場地</a></li>
-                    <li class = "grayLi"><a href="RS_Record.html">個人紀錄</a></li>
+                    <li><a href="RS_Record.html">個人紀錄</a></li>
+                    <!-- <li><a href="#">訂單修改/刪除</a></li> -->
                     <li><a href="RS_QueryPlace.html">場地使用狀況</a></li>
                 </ul>
                 <ul class = "dropDown">
-                    <li><a href="#">Hi,
+                    <li class = "grayLi"><a href="#">Hi,
                             <span>使用者</span>
                         </a>
                         <ul>
                             <li><a href="RS_AccountInfo.html">管理帳戶</a></li>
-                            <li><a href="Login.html">登出</a></li>
+                            <li><a href="/webpage/Login.html">登出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -42,11 +43,11 @@
         <div class = "centerRegion">
             <div class = "text">
                 <p class = "reply" style="padding: 2em 0;">
-                    您的訂單已取消
+                    您的個人帳號資訊已修改完成
                 </p>
                 
                 <div class = "bottom" style = "text-align: center;">
-                    <a href = "RS_Record.html"><button type="button" style="cursor: pointer;">確認</button></a>
+                    <a href = "RS_AccountInfo.html"><button type="button" style="cursor: pointer;">確認</button></a>
                 </div>
             </div>
         </div>

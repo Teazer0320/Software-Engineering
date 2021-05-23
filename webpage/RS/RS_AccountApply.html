@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="../css/Account.css" type="text/css" />
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="/css/Account.css" type="text/css" />
         <meta charset  = "utf-8">
         <title> RS_AccountApply</title>
     </head>
@@ -14,13 +14,13 @@
             <!-- <table align = "center" width = "95%" cellpadding = "5"> -->
 
             <span style = "padding-left: 3%;"display: inline-block>
-                <img src="../asset/logoword_.png" class = "logo">
-                <a href="Login.html" class = "logoTEXT">烤肉露營區租借系統</a>
+                <img src="/asset/logoword_.png" class = "logo">
+                <a href="/webpage/Login.html" class = "logoTEXT">烤肉露營區租借系統</a>
             </span>            
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
             <div class = "grayBlock menu">
                 <ul>
-                    <li class = "grayLi"><a href="Login.html">公告</a></li>
+                    <li class = "grayLi"><a href="/webpage/Login.html">公告</a></li>
                     <li><a href="RS_QueryPlaceIntro.html">介紹</a></li>
                 </ul>
             </div>
@@ -62,9 +62,11 @@
                 </div>
                 <div class = "content">
                     <div class = "formTextR">
-                        <p></p>
+                        <p>身分別：</p>
                     </div>
-                    <div class = "formBlock" style="width: 200px"> </div>
+                    <div class = "formBlock">
+                        <input type = "text" name = "identity" style="width: 200px " readonly = "readonly" placeholder="校外人士">
+                    </div>
                     <div class = "formTextL">
                         <p>再次確認密碼：</p>
                     </div>

@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="../css/Account.css" type="text/css" />
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="/css/Account.css" type="text/css" />
         <meta charset  = "utf-8">
-        <title> RS_AccountModify</title>
+        <title> RS_AccountInfo</title>
     </head>
     <body style = margin:0px>
         <!-- 網頁上方的工具列或訊息 -->
@@ -14,8 +14,8 @@
             <!-- <table align = "center" width = "95%" cellpadding = "5"> -->
 
             <span style = "padding-left: 3%;"display: inline-block>
-                <img src="../asset/logoword_.png" class = "logo">
-                <a href="Login.html" class = "logoTEXT">烤肉露營區租借系統</a>
+                <img src="/asset/logoword_.png" class = "logo">
+                <a href="/webpage/Login.html" class = "logoTEXT">烤肉露營區租借系統</a>
             </span>            
             <div style="background-color:#f5be11;padding:0.7%; margin: 0px; width: 100%; border: 0%"></div>
             <div class = "grayBlock menu">
@@ -31,7 +31,7 @@
                         </a>
                         <ul>
                             <li><a href="RS_AccountInfo.html">管理帳戶</a></li>
-                            <li><a href="Login.html">登出</a></li>
+                            <li><a href="/webpage/Login.html">登出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -43,20 +43,21 @@
         <div class = "centerRegion">
             <div class = "text">
                 <p class = "title">
-                    帳號資訊修改
+                    個人帳號資訊
                 </p>
+                <!-- 帳號資訊所有欄位皆為唯讀 -->
                 <div class = "content">
                     <div class = "formTextR">
                         <p>姓名：</p>
                     </div>
                     <div class = "formBlock">
-                        <input type = "text" name = "name" style="width: 200px">
+                        <input type = "text" name = "name" style="width: 200px" readonly="readonly">
                     </div>
                     <div class = "formTextL">
                         <p>連絡電話：</p>
                     </div>
                     <div class = "formBlock">
-                        <input type = "text" name = "name" style="width: 200px">
+                        <input type = "text" name = "name" style="width: 200px" readonly="readonly">
                     </div>
                 </div>
                 <div class = "content">
@@ -64,25 +65,27 @@
                         <p>帳號：</p>
                     </div>
                     <div class = "formBlock">
-                        <input type = "text" name = "account" style="width: 200px">
+                        <input type = "text" name = "account" style="width: 200px" readonly="readonly">
                     </div>
                     <div class = "formTextL">
                         <p>密碼：</p>
                     </div>
                     <div class = "formBlock">
-                        <input type = "text" name = "psw" style="width: 200px">
+                        <input type = "text" name = "psw" style="width: 200px" readonly="readonly">
                     </div>
                 </div>
                 <div class = "content">
                     <div class = "formTextR">
-                        <p></p>
+                        <p>身分別：</p>
                     </div>
-                    <div class = "formBlock" style="width: 200px"> </div>
+                    <div class = "formBlock">
+                        <input type = "text" name = "identity" style="width: 200px " readonly = "readonly">
+                    </div>
                     <div class = "formTextL">
                         <p>再次確認密碼：</p>
                     </div>
                     <div class = "formBlock" >
-                        <input type = "text" name = "pswCheck" style="width: 200px">
+                        <input type = "text" name = "pswCheck" style="width: 200px" readonly="readonly">
                     </div>
                 </div>
                 <div class = "content">
@@ -90,7 +93,7 @@
                         <p>email：</p>
                     </div>
                     <div class = "formBlock2">
-                        <input type = "text" name = "email" style="width: 100%">
+                        <input type = "text" name = "email" style="width: 100%" readonly="readonly">
                     </div>
                 </div>
                 <div class = "content">
@@ -98,7 +101,7 @@
                         <p>服務單位：</p>
                     </div>
                     <div class = "formBlock2">
-                        <input type = "text" name = "office" style="width: 100%">
+                        <input type = "text" name = "office" style="width: 100%" readonly="readonly">
                     </div>
                 </div>
 
@@ -108,12 +111,12 @@
                     </div>
                     <div style="width:5px; display: inline-block; vertical-align: -webkit-baseline-middle;">&nbsp;</div>
                     <div class = "formBlock2">
-                        <input type = "text" name = "address" style="width: 100%">
+                        <input type = "text" name = "address" style="width: 100%" readonly="readonly">
                     </div>
                 </div>
                 <div class = "bottom" style = "text-align: center;">
-                    <a href = "RS_AccountInfo.html"><button type="button" style="cursor: pointer; margin-right: 2em;">取消修改</button></a>
-                    <a href = "RS_AccountModifyCheck.html"><button type="button" style="cursor: pointer; margin-left: 2em;">確認修改</button></a>
+                    <a href = "RS_Record.html"><button type="button" style="cursor: pointer; margin-right: 2em;">確認</button></a>
+                    <a href = "RS_AccountModify.html"><button type="button" style="cursor: pointer; margin-left: 2em;">修改</button></a>
                 </div>
             </div>
         </div>
