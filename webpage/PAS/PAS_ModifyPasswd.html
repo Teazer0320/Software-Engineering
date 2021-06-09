@@ -1,11 +1,17 @@
 <!doctype html>
 <html>
+<script>
+    function check_all(obj, cName) {
+        var checkboxs = document.getElementsByName(cName);
+        for (var i = 0; i < checkboxs.length; i++) { checkboxs[i].checked = obj.checked; }
+    }</script>
+
 <head>
     <link rel="stylesheet" href="/css/reset.css" type="text/css" />
-    <link rel="stylesheet" href="/css/PAS.css" type="text/css" />
+    <link rel="stylesheet" href="/css/Account.css" type="text/css" />
 
     <meta charset="utf-8">
-    <title>PAS_CreatePlace</title>
+    <title>PAS_Reject</title>
 </head>
 
 <body style=margin:0px>
@@ -23,12 +29,12 @@
             <ul>
                 <li><a href="PAS_FormManage.html">申請批准</a></li>
                 <li><a href="PAS_Record.html">租借紀錄</a></li>
-                <li class="grayLi"><a href="PAS_PlaceManage.html">場地管理</a></li>
+                <li><a href="PAS_PlaceManage.html">場地管理</a></li>
                 <li><a href="PAS_AnnouncementManage.html">公告</a></li>
             </ul>
             <!-- 下拉式選單 -->
             <ul class="dropDown">
-                <li class><a href="#">Hi,
+                <li class="grayLi"><a href="#">Hi,
                         <span>場地管理員</span>
                     </a>
                     <ul>
@@ -42,36 +48,44 @@
 
     <!--中間區塊-->
     <div class="centerRegion">
-
         <div class="text">
             <p class="title">
-                <span>新增場地</span>
+                密碼修改
             </p>
-            <div class="text-left">
-                <div style="border: 2px #707070 solid; margin: 0px 300px; padding: 20px 50px ;">
-                    <div class="content">
-                        場地種類：
-                        <input type="radio" id="r1" name="r1" readonly="readonly" />
-                        <label for="r1">&nbsp; 露營區</label>
-                        <input type="radio" id="r1" name="r1" readonly="readonly" />
-                        <label for="r1">&nbsp; 烤肉區</label>
-                    </div>
-                    <div class="content">
-                        <p> 價格：</p>
-                        <input type="text" style="width: 18em;" readonly="readonly" />
-                    </div>
-                    <div class="content">
-                        <p>數量：</p>
-                        <input type="text" style="width: 18em;" readonly="readonly" />
-                    </div>
+            <div class="content">
+                <div class="formTextR">
+                    <p>帳號：</p>
+                </div>
+                <div class="formBlock">
+                    <!-- 帳號不能修改，為readonly，value的部分要填該行政人員的帳號 -->
+                    <input type="text" name="account" style="width: 200px" readonly="readonly" value="行政人員的帳號">
+                </div>
+                <div class="formTextL">
+                    <p>密碼：</p>
+                </div>
+                <div class="formBlock">
+                    <input type="text" name="psw" style="width: 200px">
                 </div>
             </div>
-            <!-- 確認鍵 -->
-            <div>
-                <a href="PAS_PlaceManage.html"><button type="button"
-                        style="cursor: pointer; margin:1em 1em;">返回</button></a>
-                <a href="PAS_CreatePlaceReply.html"><button type="button"
-                        style="cursor: pointer; margin:1em 1em;">確認</button></a>
+            <div class="content">
+                <div class="formTextR">
+                    <p>身分別：</p>
+                </div>
+                <div class="formBlock">
+                    <input type="text" name="identity" style="width: 200px " readonly="readonly" value="行政人員">
+                </div>
+                <div class="formTextL">
+                    <p>再次確認密碼：</p>
+                </div>
+                <div class="formBlock">
+                    <input type="text" name="pswCheck" style="width: 200px">
+                </div>
+            </div>
+            <div class="bottom" style="text-align: center;">
+                <a href="PAS_FormManage.html"><button type="button"
+                        style="cursor: pointer; margin: 4em 2em 0 0;">取消修改</button></a>
+                <a href="PAS_PasswdChecking.html"><button type="button"
+                        style="cursor: pointer; margin: 4em 0 0 2em;">確認修改</button></a>
             </div>
         </div>
     </div>
